@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+	<display-name>downloadTest</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+	<servlet>
+		<servlet-name>FirstServlet</servlet-name>
+		<servlet-class>FirstServlet</servlet-class> 
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FirstServlet</servlet-name>
+		<url-pattern>/servlet/FirstServlet</url-pattern> 
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>getInitParameterTest</servlet-name>
+		<servlet-class>getInitParameterTest</servlet-class>
+		<init-param>
+			<param-name>configUsername</param-name>
+			<param-value>2102yqg</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>configpassword</param-name>
+			<param-value>654321</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>getInitParameterTest</servlet-name>
+		<url-pattern>/servlet/getInitParameterTest</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+	  	<param-name>username</param-name>
+	  	<param-value>gqy2012</param-value>
+  	</context-param>
+
+  	<context-param>
+	  	<param-name>password</param-name>
+	  	<param-value>123456</param-value>
+  	</context-param> 
+
+	<servlet>
+		<servlet-name>forwardTest</servlet-name>
+		<servlet-class>forwardTest</servlet-class> 
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>forwardTest</servlet-name>
+		<url-pattern>/servlet/forwardTest</url-pattern> 
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>demo1</servlet-name>
+		<servlet-class>demo1</servlet-class> 
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>demo1</servlet-name>
+		<url-pattern>/servlet/demo1</url-pattern> 
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>redirectTest</servlet-name>
+		<servlet-class>redirectTest</servlet-class> 
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>redirectTest</servlet-name>
+		<url-pattern>/servlet/redirectTest</url-pattern> 
+	</servlet-mapping>
+
+	<servlet>
+        <servlet-name>downloadTest</servlet-name>
+        <servlet-class>downloadTest</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>downloadTest</servlet-name>
+        <url-pattern>/servlet/downloadTest</url-pattern>
+    </servlet-mapping>
+
+</web-app>
